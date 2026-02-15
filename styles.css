@@ -6,7 +6,9 @@
     --Green400: hsl(71, 73%, 54%);
     --Gray500: hsl(218, 22%, 67%);
 }
-
+* {
+    box-sizing: border-box;
+}
 body {
     background: var(--Teal100);
 }
@@ -112,4 +114,19 @@ body {
     padding: 0;
     color: var(--White);
     opacity: 0.7;
+}
+
+@media screen and (max-width: 767px){
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
 }
